@@ -1,0 +1,565 @@
+body {
+    background-image: url("../img/Фон.webp");
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    width: 100%;
+    background-color: rgb(93, 181, 181);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 -1px 1px rgba(0, 0, 0, 0.6), 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.elem_menu {
+    margin: auto 1vw auto 2vw;
+}
+
+.korz {
+    margin-left: 30vw;
+    padding: 5px;
+}
+
+.korz>img {
+    height: 3.5vw;
+    width: auto;
+    margin: auto;
+    cursor: 	pointer;
+}
+
+.elem_menu>a {
+    text-decoration: none;
+    color: white;
+    font: 1.2vw Century Gothic;
+    font-weight: bold;
+}
+
+.elem_menu>a:hover {
+    color: rgb(255, 235, 173)!important;
+}
+
+#c1 {
+    color: rgb(247, 195, 8);
+}
+
+.contener {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    justify-content: center;
+}
+
+.cont_el {
+    padding: 1vw;
+}
+
+.cont_img>img {
+    width: 15vw;
+    height: 15vw;
+}
+
+.cont_text {
+    cursor: 	pointer;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-top: -4.5vw;
+    padding-bottom: 1.5vw;
+    padding-top: 1.5vw;
+    background-color: rgba(255, 255, 255, 0.80);
+    opacity: 0;
+    /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s;
+    font-size: 1.5vw;
+}
+
+.cont_el:hover .cont_text {
+    opacity: 100;
+    transition: 1s;
+    /*Скорость перехода состояния элемента*/
+}
+
+.cont_el>p {
+    font-size: 1.1vw;
+}
+
+.podval {
+    width: 100%;
+    height: 5vw;
+    background-color: rgb(8, 101, 121);
+}
+
+#o_nas {
+    display: none;
+    text-align: center;
+    margin-top: 4.3vw;
+    color: rgb(41, 158, 159);
+    font: 6vw "Arial Black";
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+}
+
+#p1 {
+    color: black;
+    font: 6vw "Bahnschrift Condensed";
+}
+
+#p2_p3 {
+    display: flex;
+    justify-content: center;
+}
+
+#p2,
+#p3 {
+    color: black;
+    font: 1.2vw "Bahnschrift Condensed";
+}
+
+#p3 {
+    margin-top: 11vw;
+}
+
+#gde_ky {
+    text-align: center;
+    display: none;
+    margin-top: 4.3vw;
+    font: 3.5vw "Arial Black";
+    color: rgb(41, 158, 159);
+    padding: 7vw 0px;
+}
+
+#FAQ {
+    text-align: center;
+    display: none;
+    margin-top: 4.3vw;
+}
+
+#FAQ>p {
+    font: 3.5vw "Arial Black";
+    color: rgb(41, 158, 159);
+}
+
+#FAQ>div>h1 {
+    font-weight: 100;
+}
+
+#FAQ>div {
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#p4>div {
+    color: black;
+    font: 1.2vw "Bahnschrift Condensed";
+}
+
+#p4>div>p {
+    color: rgb(41, 158, 159);
+    font: 2vw "Bahnschrift Condensed";
+}
+
+#p4 {
+    display: flex;
+    padding: 5vw 0px;
+    justify-content: space-evenly;
+}
+
+#cont {
+    display: none;
+    margin-top: 4.3vw;
+}
+
+#cont>p {
+    font-size: 86px;
+    font-style: normal;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin: 0;
+    margin-top: 0.3vw;
+    /* font: 3.5vw "Arial Black";
+    color: rgb(41, 158, 159);
+    text-align: center; */
+}
+
+#cont>p>span {
+    font: 5vw Monotype Corsiva;
+    font-weight: bold;
+}
+
+.cont-title {
+    font-family: roboto-bold, roboto, sans-serif;
+    color: #299E9E;
+    font-size: 49px;
+    text-align: center;
+}
+
+#cont .content {
+    display: flex;
+    /* margin: 0 auto; */
+}
+
+#cont .block {
+    display: flex;
+    margin: 0 auto;
+}
+
+#cont .block .block1 {
+    flex: 0 0 25%;
+    display: flex;
+    font: normal normal normal 16px/1.4em Arial, 'ｍｓ ｐゴシック', 'ms pgothic', '돋움', dotum, helvetica, sans-serif;
+}
+
+#cont .block .block2 {
+    /* flex: 0 0 50vw; */
+    min-width: 180px;
+    max-width: 980px;
+    width: 100%;
+}
+
+.form {
+    padding: 0 15px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form form input,
+.form form textarea {
+    font: normal normal normal 14px/1.4em arial, 'ｍｓ ｐゴシック', 'ms pgothic', '돋움', dotum, helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(0, 0, 0, 1);
+    color: #000000;
+    margin: 0 0 5px;
+    /* width: 100%; */
+    padding: 5px;
+}
+
+.form form textarea {
+    min-height: 130px;
+    resize: none;
+}
+
+.block1 .text {
+    margin: auto;
+}
+
+#cont .block .block3 {
+    flex: 0 0 25%;
+    font: normal normal normal 25px/1.4em 'open sans', sans-serif;
+    display: flex;
+}
+
+.block3 .text {
+    margin: auto 0;
+}
+
+.adr-t,
+.tel-t,
+.mail-t {
+    font: normal normal normal 14px/1.4em arial, 'ｍｓ ｐゴシック', 'ms pgothic', '돋움', dotum, helvetica, sans-serif;
+}
+
+.tel-t a:hover,
+.mail-t a:hover,
+.tel-t a,
+.mail-t a {
+    text-decoration: none;
+    color: black;
+}
+
+#cont {
+    background-image: none;
+    background-color: #fff;
+    margin-bottom: 10vh;
+}
+
+#submit {
+    background-color: rgba(249, 196, 2, 1);
+    font: normal normal normal 14px/1.4em arial, 'ｍｓ ｐゴシック', 'ms pgothic', '돋움', dotum, helvetica, sans-serif;
+    width: max-content;
+    align-self: flex-end;
+    padding: 5px;
+    border: 0;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    justify-content: center;
+}
+
+.social a {
+    margin: 0 20px;
+}
+
+.social a,
+.social a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+#fon_bp {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(68, 68, 68, 0.815);
+}
+
+.bp {
+    display: none;
+    /* position: fixed; */
+    width: 50vw;
+    /* height: 50vh; */
+    z-index: 101;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+}
+
+.bp .flex-container {
+    display: flex;
+    /* margin: auto; */
+    width: 100%;
+    padding: 15px;
+}
+
+.bp .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.bp .container .close,
+.cart-close {
+    display: flex;
+    flex-direction: row-reverse;
+    border: none;
+    padding: 15px;
+    /* background-color: rgba(0, 0, 0, 0); */
+}
+
+.bp .container .close button,
+.cart-close button {
+    z-index: 102;
+    font-family: courier;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #a1a1a1;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.bp-block {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    padding: 0 20px;
+}
+
+.bp-block .bp-left {
+    flex: 0 0 50%;
+    padding-right: 35px;
+}
+
+.bp-block .bp-left img {
+    width: 100%;
+    height: auto;
+}
+
+.bp-block .bp-right {
+    width: 100%;
+}
+
+.bp-title {
+    font: normal normal normal 25px/1.4em "open sans", sans-serif;
+}
+
+.bp-price {
+    padding-top: 23px;
+    padding-bottom: 0;
+    font-size: 20px;
+}
+
+.bp-count {}
+
+.bp-count-title {
+    font-size: 15px;
+    margin-bottom: 12px;
+    display: block;
+    line-height: 1;
+}
+
+.bp-count input {
+    font: normal normal normal 14px/1.4em arial, helvetica, sans-serif;
+    padding-left: 1em;
+    /* padding-right: 2em; */
+    width: 100px;
+    line-height: 2em;
+}
+
+.bp-add-cart {
+    /* padding: 15px 20px; */
+    background-color: #F9C402;
+    margin-top: 35px;
+}
+
+.bp-add-cart button {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #F9C402;
+    color: #FFFFFF;
+    border-width: 0;
+    border-color: #000000;
+    border-radius: 0px;
+    font-size: 15px;
+    font: normal normal normal 14px/1.4em arial,  "ms pgothic", dotum, helvetica, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#cart {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    flex-direction: row-reverse;
+    background-color: rgba(68, 68, 68, 0.815);
+}
+
+.cart-container {
+    /* margin: auto; */
+    width: 350px;
+    height: 100vh;
+    background-color: white;
+    /* padding: 15px; */
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-heder {
+    background: #000000;
+    width: 100%;
+    height: 100px;
+    padding: 20px 0 0;
+    display: flex;
+}
+
+.cart-title {
+    color: #FFFFFF;
+    display: block;
+    margin: auto;
+    font-size: 2em;
+    /* font-weight: lighter; */
+    line-height: 2em;
+    /* text-align: center; */
+}
+
+.cart-content {
+    padding: 34px 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-bottom: 5px;
+    padding-bottom: 5p;
+    padding-bottom: 5;
+}
+
+.item-img {
+    margin-right: 15px;
+}
+
+.item-img img {
+    width: auto;
+    height: 6em;
+}
+
+.item-name {
+    color: #535353;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    word-break: break-word;
+}
+
+.item-price {
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.item-count {
+    margin-top: 8px;
+}
+
+.item-count input {
+    border: 1px solid #000000;
+    color: #000000;
+    background-color: #FFFFFF;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    width: 64px;
+    /* height: 28px; */
+    line-height: 2em;
+}
+
+.cart-footer {
+    padding: 34px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-sum {
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: 12px;
+    height: 76px;
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+.cart-buy {}
+
+.cart-buy button {
+    width: 100%;
+    background-color: #F9C402;
+    border-width: 0;
+    border-color: #000000;
+    border-radius: 0;
+    color: #FFFFFF;
+    font: normal normal normal 14px/1.4em arial, "ms pgothic", dotum, helvetica, sans-serif;
+    padding: 10px 20px;
+    align-self: flex-end;
+}
